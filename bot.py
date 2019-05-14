@@ -163,7 +163,7 @@ def send_img_question(bot, update, no):
                       photo=open((img), 'rb'))
     send_question(bot, update, no)
 
-
+# To Do
 def answer_input(update, bot, no):
     cv_handler = ConversationHandler(per_user=True,
                                      entry_points=[CommandHandler('start', start)],
@@ -210,7 +210,7 @@ def skip(bot, update):
     generate_question(bot, update)
 
 
-updater = Updater('830877063:AAEKOQsC7-t-_KUKdtFGwSF8itp8GwV7GGE')
+updater = Updater('TOKEN')
 
 updater.dispatcher.add_handler(CommandHandler('hello', start))
 updater.dispatcher.add_handler(CommandHandler('skip', skip))
